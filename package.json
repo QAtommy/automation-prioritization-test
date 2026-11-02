@@ -1,0 +1,22 @@
+{
+  "name": "prioritization-automation-takehome",
+  "version": "1.0.0",
+  "description": "E2E test suite for the sauce labs shop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.8.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
