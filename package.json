@@ -1,5 +1,5 @@
 {
-  "name": "prioritization-automation-takehome",
+  "name": "prioritization-automation",
   "version": "1.0.0",
   "description": "E2E test suite for the sauce labs shop.",
   "main": "index.js",
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.60.0",
+    "@playwright/test": "^1.64.1",
     "@types/node": "^25.8.0"
   },
   "dependencies": {
