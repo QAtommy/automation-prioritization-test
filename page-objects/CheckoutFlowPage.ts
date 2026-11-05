@@ -95,6 +95,9 @@ export class CheckoutFlowPage {
    * @returns {Promise<void>}
    */
   async fillCheckoutInformation(firstName: string, lastName: string, postalCode: string): Promise<void> {
+    // Sometimes the fill command will not populate the first name field correctly if the page is not fully loaded, 
+    // so we wait for the continue button to be visible before filling in the fields. This is an issue on Webkit
+    await this.continueButton.waitFor({ state: 'visible' });
     await this.firstNameInput.fill(firstName);
     await this.lastNameInput.fill(lastName);
     await this.postalCodeInput.fill(postalCode);
